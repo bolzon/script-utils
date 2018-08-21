@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "underline",
+    "editor.insertSpaces": false,
+    "editor.autoClosingBrackets": false,
+    "editor.lineHeight": 20
+}
