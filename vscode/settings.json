@@ -1,8 +1,19 @@
 {
     "editor.fontFamily": "Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.renderWhitespace": "all",
+<<<<<<< HEAD
+    "editor.cursorStyle": "block",
+    "editor.insertSpaces": false,
+    "editor.autoClosingBrackets": false,
+    "editor.lineHeight": 20,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": -1,
+    "editor.mouseWheelZoom": true
+}
+=======
     "editor.cursorStyle": "underline",
     "editor.insertSpaces": false,
     "editor.autoClosingBrackets": false,
     "editor.lineHeight": 20
 }
+>>>>>>> 451725e... vscode settings
