@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+	autocrlf = false
+	filemode = false
+[user]
+	name = Alexandre Bolzon
+	email = blzn@mail.ru
