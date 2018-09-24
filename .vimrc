@@ -1,5 +1,4 @@
 set encoding=utf-8 nobomb
-set tabstop=4
 set showmatch
 set expandtab
 set tabstop=4
