@@ -16,7 +16,7 @@ syntax on
 
 set autoread
 set showmode
-set cursorline
+"set cursorline
 set hls
 "set cul
 set ttyfast
