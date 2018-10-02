@@ -1,19 +1,12 @@
 {
-    "editor.fontFamily": "Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Liga Fantasque Sans Mono NoLoopK', 'Ligalex Mon', 'Ubuntu Mon Ligaturized', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.renderWhitespace": "all",
-<<<<<<< HEAD
-    "editor.cursorStyle": "block",
-    "editor.insertSpaces": false,
     "editor.autoClosingBrackets": false,
-    "editor.lineHeight": 20,
     "files.insertFinalNewline": true,
-    "window.zoomLevel": -1,
-    "editor.mouseWheelZoom": true
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": true,
+    "editor.tabSize": 2,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.fontLigatures": true,
+    "editor.cursorStyle": "block"
 }
-=======
-    "editor.cursorStyle": "underline",
-    "editor.insertSpaces": false,
-    "editor.autoClosingBrackets": false,
-    "editor.lineHeight": 20
-}
->>>>>>> 451725e... vscode settings
