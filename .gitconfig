@@ -3,6 +3,11 @@
 	editor = vim
 	autocrlf = false
 	filemode = false
+
+[alias]
+    co = checkout
+    cob = checkout -b
+
 [user]
 	name = Alexandre Bolzon
 	email = blzn@mail.ru
