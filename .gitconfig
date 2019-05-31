@@ -7,6 +7,8 @@
 [alias]
     co = checkout
     cob = checkout -b
+    cl = config --list
+    clg = config --list --global
     sl = stash list
     sp = stash pop
     sc = stash clear
