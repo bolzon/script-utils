@@ -9,6 +9,7 @@
     cob = checkout -b
     cl = config --list
     clg = config --list --global
+    st = stash
     sl = stash list
     sp = stash pop
     sc = stash clear
