@@ -1,13 +1,18 @@
-[core]
-	ui = true
-	editor = vim
-	autocrlf = false
-	filemode = false
+
+    ui = true
+    editor = vim
+    autocrlf = false
+    filemode = false
 
 [alias]
     co = checkout
     cob = checkout -b
+    sl = stash list
+    sp = stash pop
+    sc = stash clear
+    rbm = rebase master
+    rup = remote update origin --prune
 
 [user]
-	name = Alexandre Bolzon
-	email = blzn@mail.ru
+    name = Alexandre Bolzon
+    email = blzn@mail.ru
