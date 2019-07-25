@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# jq (json parser) - https://stedolan.github.io/jq/
+# pygmentizer
+
+sudo apt install xclip
