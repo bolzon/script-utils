@@ -17,7 +17,7 @@ public class KS {
   public static void main(String[] args) {
     try {
       KeyStore store = readStore();
-      Key key = store.getKey("1", "".toCharArray());
+      Key key = store.getKey("1", "".toCharArray()); // key password is empty
       String strKey = Base64.getEncoder().encodeToString(key.getEncoded());
 
       System.out.println("Key algorithm : " + key.getAlgorithm());
@@ -47,7 +47,7 @@ public class KS {
         throw new RuntimeException("Key store could not be loaded");
       }
       KeyStore keyStore = KeyStore.getInstance("JKS");
-      keyStore.load(keyStoreStream, null);
+      keyStore.load(keyStoreStream, null); // key store password is null
       return keyStore;
     }
   }
