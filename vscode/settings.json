@@ -1,8 +1,14 @@
 {
-    "editor.fontFamily": "Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.renderWhitespace": "all",
-    "editor.cursorStyle": "underline",
     "editor.insertSpaces": false,
     "editor.autoClosingBrackets": false,
-    "editor.lineHeight": 20
+    "editor.fontFamily": "'Liga Fantasque Sans Mono NoLoopK', 'Ligalex Mon', 'Ubuntu Mon Ligaturized', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.renderWhitespace": "all",
+    "editor.autoClosingBrackets": false,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": true,
+    "editor.tabSize": 2,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.fontLigatures": true,
+    "editor.cursorStyle": "block"
 }
