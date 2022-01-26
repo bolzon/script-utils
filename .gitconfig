@@ -7,6 +7,8 @@
 [alias]
     go = checkout
     new = checkout -b
+    fp = fetch -p
+    ru = remote update --prune
     b = branch
     s = status
     l = log
