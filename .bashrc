@@ -20,7 +20,7 @@ parse_git_branch_or_tag() {
   echo "$OUT"
 }
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch_or_tag)\[\033[00m\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch_or_tag)\[\033[00m\]\n\$ '
 
 # XML parser
 
@@ -35,14 +35,20 @@ xq () {
         done <<< "$var"
 }
 
+# nvm
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# aliases
+# private aliases
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-alias py=python
+alias py='python'
+alias k='kubectl'
+alias kj='k get jobs'
+alias kdj='k describe job'
+alias kp='k get pods'
+alias kdp='k describe pod'
+alias kl='k logs'
+alias tf='terraform'
+alias laws='aws --endpoint-url=http://localhost:4566' # localstack
