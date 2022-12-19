@@ -1,0 +1,44 @@
+# some aliases
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias py='python'
+alias tf='terraform'
+alias laws='aws --endpoint-url=http://localhost:4566'
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# add git branch if its present to PS1
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+
+parse_git_tag () {
+  git describe --abbrev=0 --tags 2> /dev/null
+}
+
+parse_git_branch_or_tag() {
+  local OUT="#$(parse_git_tag) $(parse_git_branch)"
+  OUT=`echo "$OUT" | sed -e 's/\s*\(.*\)\s*/\1/'`
+  if [ "$OUT" = "# " ]; then
+    OUT=`echo "$OUT" | sed -e 's/\s*#\s*//'`
+  else
+    OUT=" $OUT"
+  fi
+  echo "$OUT"
+}
+
+PS1='\u@\h 👉 \w$(parse_git_branch_or_tag)\n\$ '
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# host aliases
+
+export HOSTALIASES=~/.hosts
+
