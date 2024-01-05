@@ -1,14 +1,74 @@
 {
-    "editor.insertSpaces": false,
-    "editor.autoClosingBrackets": false,
-    "editor.fontFamily": "'Liga Fantasque Sans Mono NoLoopK', 'Ligalex Mon', 'Ubuntu Mon Ligaturized', Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.renderWhitespace": "all",
-    "editor.autoClosingBrackets": false,
-    "files.insertFinalNewline": true,
-    "window.zoomLevel": 0,
-    "editor.mouseWheelZoom": true,
-    "editor.tabSize": 2,
-    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "Menlo, Monaco, 'Monoid', 'Courier Ne', 'Fira Code Retina', 'Ubuntu Mon', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallbac'",
     "editor.fontLigatures": true,
-    "editor.cursorStyle": "block"
+    "editor.fontWeight": "normal",
+    "editor.lineHeight": 20,
+    "editor.minimap.maxColumn": 30,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.useTabStops": false,
+    "files.insertFinalNewline": false,
+    "workbench.colorTheme": "Vision (colorblind) (rainglow)",
+    "workbench.sideBar.location": "right",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "files.trimTrailingWhitespace": true,
+    "gitlens.blame.highlight.enabled": true,
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "gitlens.hovers.currentLine.changes": true,
+    "gitlens.hovers.currentLine.enabled": true,
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.hovers.annotations.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "autopep8.args": [
+        "--max-line-length",
+        "132"
+    ],
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.autoImportCompletions": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSaveMode": "modifications",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    // Custom tags for the parser to use
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Contains",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true,
+    "python.analysis.extraPaths": [],
+
 }
