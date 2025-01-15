@@ -1,12 +1,15 @@
 #!/bin/bash
-
-#
-# USAGE
-#   sh correios.sh <object code>
-#
 # @author Alexandre Bolzon <blzn@mail.ru>
-# @date 2018/02/23
-#
+# @date 23/02/2018
+
+if [ -z "$1" ]; then
+    echo """
+    USAGE:
+
+       $0 <object code>
+"""
+    exit 1
+fi
 
 echo 'Rastreando objeto "'$1'"'
 
