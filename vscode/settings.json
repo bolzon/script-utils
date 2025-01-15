@@ -13,7 +13,7 @@
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": false,
     "files.insertFinalNewline": false,
-    "workbench.colorTheme": "Vision (colorblind) (rainglow)",
+    "workbench.colorTheme": "Service Contrast (rainglow)",
     "workbench.sideBar.location": "right",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
