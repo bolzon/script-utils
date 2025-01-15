@@ -1,5 +1,16 @@
+# aliases
 
-# Add git branch if its present to PS1
+alias py='python'
+alias k='kubectl'
+alias kj='k get jobs'
+alias kdj='k describe job'
+alias kp='k get pods'
+alias kdp='k describe pod'
+alias kl='k logs'
+alias tf='terraform'
+alias laws='aws --endpoint-url=http://localhost:4566' # localstack
+
+# add git branch to PS1
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
@@ -22,7 +33,7 @@ parse_git_branch_or_tag() {
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch_or_tag)\[\033[00m\]\n\$ '
 
-# XML parser
+# xml parser
 
 xq () {
         read -d '' var
@@ -34,21 +45,3 @@ xq () {
                 fi
         done <<< "$var"
 }
-
-# nvm
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# private aliases
-
-alias py='python'
-alias k='kubectl'
-alias kj='k get jobs'
-alias kdj='k describe job'
-alias kp='k get pods'
-alias kdp='k describe pod'
-alias kl='k logs'
-alias tf='terraform'
-alias laws='aws --endpoint-url=http://localhost:4566' # localstack
