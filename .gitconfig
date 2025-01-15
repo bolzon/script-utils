@@ -5,15 +5,33 @@
     filemode = false
 
 [alias]
+    cm = commit
     go = checkout
     new = checkout -b
     fp = fetch -p
     ru = remote update origin --prune
     b = branch
     s = status
-    l = log
     d = diff
+    l = log --show-signature
 
+[format]
+    signoff = true
+
+[commit]
+    gpgsign = true
+
+[tag]
+    gpgsign = true
+
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/allowed_signers
+    # echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_rsa.pub)" >> ~/.ssh/allowed_signers
+
+[gpg]
+    format = ssh
+        
 [user]
     name = Alexandre Bolzon
-    email = blzn@mail.ru
+    email = <email>
+    signingkey = ~/.ssh/id_rsa.pub
